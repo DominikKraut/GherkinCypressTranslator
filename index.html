@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GherkinCypressTemplator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css"
+      integrity="sha512-n6/jTwweEY3V0pUxoyINxlh7X9Jkz0V7bhUij2Amu6CfU6Y3YVcNXub8x/aoh4gX9M2jh4MK7Oz8IGjBDCfmTg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1>Gherkin to Cypress Step Definitions Converter</h1>
+    <form id="form">
+      <label for="gherkin">Gherkin syntax test cases:</label><br />
+      <textarea id="gherkin" name="gherkin" rows="10" cols="80"></textarea><br />
+      <button type="submit">Convert</button>
+    </form>
+    <br />
+    <label for="output">Cypress step definitions:</label><br />
+    <textarea id="output" name="output" rows="10" cols="80" readonly></textarea><br />
+  </body>
+</html>
