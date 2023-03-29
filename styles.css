@@ -15,6 +15,17 @@ textarea {
   display: block;
 }
 
+nav {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  width: 20px;
+}
+
 /* Orange Light scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
