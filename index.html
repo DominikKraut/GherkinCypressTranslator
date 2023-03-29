@@ -7,17 +7,26 @@
     <title>GherkinCypressTemplator</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css" />
+    <link rel="stylesheet" href="/node_modules/@picocss/pico/css/pico.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Gherkin to Cypress Step Definitions Converter</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="secondary">…</a></li>
+      </ul>
+      <ul>
+        <li><strong>Gherkin to Cypress Templater</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#" class="secondary">…</a></li>
+      </ul>
+    </nav>
     <form id="form">
-      <label for="gherkin">Gherkin syntax test cases:</label><br />
-      <textarea id="gherkin" name="gherkin" rows="10" cols="80"></textarea><br />
+      <textarea id="gherkin" name="gherkin" rows="10" cols="80" placeholder="Gherkin Syntax Steps" required></textarea><br />
       <button type="submit">Convert</button>
     </form>
     <br />
-    <label for="output">Cypress step definitions:</label><br />
-    <textarea id="output" name="output" rows="10" cols="80" readonly></textarea><br />
+    <textarea id="output" name="output" rows="10" cols="80" placeholder="Cypress step definitions" readonly></textarea><br />
   </body>
 </html>
