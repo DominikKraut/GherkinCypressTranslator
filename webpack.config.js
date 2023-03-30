@@ -19,5 +19,8 @@ module.exports = {
         use: ["node-loader"],
       },
     ],
+    externals: {
+      pico: "pico",
+    },
   },
 };
