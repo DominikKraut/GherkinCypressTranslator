@@ -1,5 +1,5 @@
-import "./styles.css";
-import "../node_modules/@picocss/pico/css/pico.css";
+// import "./styles.css";
+// import "../node_modules/@picocss/pico/css/pico.css";
 
 const form = document.querySelector("#form");
 const gherkinTextarea = document.querySelector("#gherkin");
@@ -33,3 +33,8 @@ function convertToCypressStepDefinitions(gherkin) {
   });
   return stepDefinitions;
 }
+
+document.querySelector("#copy").onclick = function () {
+  document.querySelector("#output").select();
+  document.execCommand("copy");
+};
