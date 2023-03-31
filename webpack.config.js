@@ -36,6 +36,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
+    assetModuleFilename: "src/assets/images/[name].[ext]",
   },
   module: {
     rules: [
@@ -50,12 +51,8 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: "images",
-        },
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/,
+        type: "asset/resource",
       },
     ],
   },
