@@ -13,14 +13,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@picocss/pico": "^1.5.7",
-    "html-webpack-plugin": "^5.5.0"
+    "@picocss/pico": "^1.5.7"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@webpack-cli/generators": "^3.0.1",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-webpack-loader": "^8.1.0",
     "node-loader": "^2.0.0",
     "path": "^0.12.7",
     "style-loader": "^3.3.2",

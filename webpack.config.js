@@ -29,6 +29,8 @@
 
 // webpack.config.js
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   context: __dirname,
   mode: "development",
@@ -53,6 +55,10 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/,
         type: "asset/resource",
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
       },
     ],
   },
