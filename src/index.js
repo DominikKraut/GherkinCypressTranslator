@@ -1,3 +1,5 @@
+import "@picocss/pico/css/pico.css";
+
 const form = document.querySelector("#form");
 const gherkinTextarea = document.querySelector("#gherkin");
 const outputTextarea = document.querySelector("#output");
