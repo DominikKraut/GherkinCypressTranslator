@@ -27,12 +27,7 @@ jobs:
           npm install
           npx webpack --config webpack.config.js
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to GH Page
+      - name: Deploy to GH Page 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
