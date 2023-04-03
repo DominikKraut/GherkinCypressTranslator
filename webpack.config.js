@@ -38,7 +38,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    assetModuleFilename: "src/assets/images/[name].[ext]",
+    assetModuleFilename: "src/assets/images/[name][ext]",
   },
   module: {
     rules: [
@@ -53,12 +53,8 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         type: "asset/resource",
-      },
-      {
-        test: /\.html$/i,
-        loader: "html-loader",
       },
     ],
   },
