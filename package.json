@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@picocss/pico": "^1.5.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
   }
 }
