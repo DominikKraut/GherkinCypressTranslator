@@ -15,6 +15,7 @@
     "@picocss/pico": "^1.5.7"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3"
   }
 }
