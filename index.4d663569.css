@@ -1,0 +1,64 @@
+button {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+textarea {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 12px;
+  display: block;
+}
+
+#output {
+  font-size: 10px;
+}
+
+nav {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  width: 20px;
+}
+
+[data-theme="light"], :root:not([data-theme="dark"]) {
+  --primary: #fb8c00;
+  --primary-hover: #f57c00;
+  --primary-focus: #fb8c0020;
+  --primary-inverse: #fff;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #fb8c00;
+    --primary-hover: #ff9800;
+    --primary-focus: #fb8c0040;
+    --primary-inverse: #fff;
+  }
+}
+
+[data-theme="dark"] {
+  --primary: #fb8c00;
+  --primary-hover: #ff9800;
+  --primary-focus: #fb8c0040;
+  --primary-inverse: #fff;
+}
+
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
