@@ -177,3 +177,7 @@ cython_debug/
 ./package-lock.json
 
 .parcel-cache
+
+node_modules
+dist
+.cache
