@@ -9,7 +9,7 @@
     "build-dev": "parcel build ./index.html --no-optimize --public-url ./",
     "prebuild": "shx rm -rf dist/*",
     "build": "parcel build ./src/index.html --public-url ./",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose --token=${{ secrets.GITHUB_TOKEN }}"
   },
   "author": "",
   "license": "ISC",
