@@ -1,2 +1,2 @@
 [build]
-  command = "BASE_URL=/gherkin-cypress-templator npm run build"
+  command = BASE_URL=/gherkin-cypress-templator npm run build
